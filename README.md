@@ -42,14 +42,14 @@ for row in cursor:
 
 # How to read data from Config file using Python
 https://stackoverflow.com/questions/19379120/how-to-read-a-config-file-using-python
-_ In Config File
+####In Config File
 ```
 [My Section]
 path1 = D:\test1\first
 path2 = D:\test2\second
 path3 = D:\test2\third
 ```
-_ In Python Program
+####In Python Program
 ```
 import ConfigParser
 
