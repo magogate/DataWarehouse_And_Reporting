@@ -21,3 +21,41 @@ In this case, we are going to use Python for ETL (Extraction Transform Load), an
 We will see difference between these 2 types and when to use each particular type.
 Following image ETL using Python which we are going to see in this example
 <img src="ETL_UsingPython.jpg" alt="Italian Trulli">
+
+# How to retrieve data from SQL Server using Python
+https://stackoverflow.com/questions/51820189/retrieve-data-from-sql-server-database-using-python
+```
+import pyodbc 
+cnxn = pyodbc.connect("Driver={SQL Server Native Client 11.0};"
+                        "Server=mySRVERNAME;"
+                        "Database=MYDB;"
+                        "uid=sa;pwd=MYPWD;"
+                        "Trusted_Connection=yes;")
+
+
+cursor = cnxn.cursor()
+cursor.execute('select DISTINCT firstname,lastname,coalesce(middlename,\' \') as middlename from Person.Person')
+
+for row in cursor:
+    print('row = %r' % (row,))
+```
+
+# How to read data from Config file using Python
+https://stackoverflow.com/questions/19379120/how-to-read-a-config-file-using-python
+_ In Config File
+```
+[My Section]
+path1 = D:\test1\first
+path2 = D:\test2\second
+path3 = D:\test2\third
+```
+_ In Python Program
+```
+import ConfigParser
+
+config = ConfigParser.ConfigParser()
+config.readfp(open(r'abc.txt'))
+path1 = config.get('My Section', 'path1')
+path2 = config.get('My Section', 'path2')
+path3 = config.get('My Section', 'path3')
+```
