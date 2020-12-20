@@ -13,3 +13,11 @@ As you can see in diagram
 3. **ODS (Operational Data Source)** -- Data from multiple Staging tables will be combined into single ODS table; also ODS table stores historical data (insert only)
 4. **DataWarehouse** -- Data from ODS will be loaded into Dim (Non Measureable Attribute) & Fact (Measurable Attributes) on daily (or weekly / monthly based on need) basis. In this case load from ODS till DW will happen using Stored Proc
 5. **Reporting** -- Final reporting will happen using SSAS Cube(Tabular model), Excel Power Pivot, or Power BI. (you can use any tool such as SQL, BO, OBIEE for data analysis)
+
+## Incremental Load**
+In this case, we are going to use Python for ETL (Extraction Transform Load), and there are 2 ways we are going to see 
+1. **Full Load** -- Pulling entire data from source tables to staging tables
+2. **Incremental Load** -- Only pulling delta records (updated or newly created records) from source tables to staging tables
+We will see difference between these 2 types and when to use each particular type.
+Following image ETL using Python which we are going to see in this example
+<img src="DW_Flow_Diagram.jpg" alt="Italian Trulli">
