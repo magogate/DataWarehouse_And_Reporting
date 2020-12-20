@@ -41,16 +41,15 @@ for row in cursor:
 ```
 
 # How to read data from Config file using Python
-https://stackoverflow.com/questions/19379120/how-to-read-a-config-file-using-python <br>
-###In Config File
+https://stackoverflow.com/questions/19379120/how-to-read-a-config-file-using-python
+
 ```
 [My Section]
 path1 = D:\test1\first
 path2 = D:\test2\second
 path3 = D:\test2\third
 ```
-<br>
-###In Python Program
+
 ```
 import ConfigParser
 
