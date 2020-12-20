@@ -20,4 +20,4 @@ In this case, we are going to use Python for ETL (Extraction Transform Load), an
 2. **Incremental Load** -- Only pulling delta records (updated or newly created records) from source tables to staging tables
 We will see difference between these 2 types and when to use each particular type.
 Following image ETL using Python which we are going to see in this example
-<img src="DW_Flow_Diagram.jpg" alt="Italian Trulli">
+<img src="ETL_UsingPython.jpg" alt="Italian Trulli">
