@@ -70,7 +70,7 @@ https://stackoverflow.com/questions/14087598/python-3-importerror-no-module-name
 # ETL - Load it to Flat File First  
 ETL Load from OLTP system to Staging tables can happen by
 1. Database to Database -- Both systems - OLTP & Staging - are in different environments, you can directly load data from OLTP to Staging, however, this will keep the connection open to source OLTP till the time load to Staging gets finish. For small datasets, this will work, but if you have millions of records in source, then keeping connection open is not a good idea. 
-2. Database to Flag File -- It's always advisable to load data from OLTP to Flat File first and then into Staging. Remember, loading data into (or from) Flat File from OLTP will take considerably less time and this way you don't have to keep your source(or target) connection open for longer period. 
+2. Database to Flat File -- It's always advisable to load data from OLTP to Flat File first and then into Staging. Remember, loading data into (or from) Flat File from OLTP will take considerably less time and this way you don't have to keep your source(or target) connection open for longer period. 
 
 ### Creating Multidimentional List
 Next task is to get records from database into a list. You can refer code from https://docs.python.org/3.3/tutorial/datastructures.html. 
