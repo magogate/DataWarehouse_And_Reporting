@@ -108,3 +108,10 @@ cnxn.commit()
 cursor.close()
 ```
 for more details you can visit https://docs.microsoft.com/en-us/sql/machine-learning/data-exploration/python-dataframe-sql-server?view=sql-server-ver15
+
+### How to handle Null?
+To handle null values in DataFrame use following code
+```
+dataFrame.fillna("", inplace=True)
+```
+For more details please visit https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.fillna.html
