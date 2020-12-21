@@ -60,5 +60,5 @@ path1 = config.get('My Section', 'path1')
 path2 = config.get('My Section', 'path2')
 path3 = config.get('My Section', 'path3')
 ```
-#ModuleNotFoundError: No module named ConfigParser
+# ModuleNotFoundError: No module named 'ConfigParser'
 https://stackoverflow.com/questions/14087598/python-3-importerror-no-module-named-configparser
