@@ -1,14 +1,15 @@
 import dao
 import pandas as pd
+import employees as emp
 
 targetTables = [    
-    "REGIONS",
-    "COUNTRIES",
-    "LOCATIONS",
-    "DEPARTMENTS",
-    "JOBS",
-    "EMPLOYEES",
-    "JOB_HISTORY"
+    # "REGIONS",
+    # "COUNTRIES",
+    # "LOCATIONS",
+    # "DEPARTMENTS",
+    # "JOBS",
+    "EMPLOYEES"
+    # "JOB_HISTORY"
 ]
 
 def fetchRecords(tableName):
@@ -17,8 +18,7 @@ def fetchRecords(tableName):
                     select *
                     from {tableName}
                     where 1=1
-                """
-    # print(sqlQuery)
+                """    
 
     cnxn = dao.getSourceConnection()
     cursor = cnxn.cursor()
@@ -26,14 +26,18 @@ def fetchRecords(tableName):
 
     hrList = []
     for row in cursor:        
-        hrList.append([elem for elem in row])
-        print([elem for elem in row])    
+        hrList.append([elem for elem in row])        
 
     pd.DataFrame(hrList).iloc[:,:].to_csv(f"{tableName}.csv", index=False)
 
     cursor.close()
     cnxn.close()
 
+def insertRecords(tableName):
+    emp.insertIntoEmployees(tableName)
+    
+
 for tableName in targetTables:
     fetchRecords(tableName)
+    insertRecords(tableName)
     print(tableName)
