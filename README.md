@@ -80,3 +80,31 @@ Python-Pandas Dataframe is very easy & convenient way to deal with data and for 
 
 ### Use to_csv
 Once DataFrame is created, use to_csv methond of python to export data into csv file.
+
+### Use read_csv to read data from csv
+Once you create separate csv file for each transaction table which you want to load into staging area, next task is to read those csv files into data frame. For that use read_csv method of pandas dataframe which will return DataFrame object. You can refer https://www.shanelynn.ie/python-pandas-read_csv-load-data-from-csv-files/ for more details
+
+### Iterate through DataFrame
+Once data frame is created - which will consists of multiple records for each table - you need to insert those records into staging table. So, inorder to iterate DataFrame you can use following code 
+'''
+import pandas as pd
+
+df = pd.DataFrame({'c1': [10, 11, 12], 'c2': [100, 110, 120]})
+
+for index, row in df.iterrows():
+    print(row['c1'], row['c2'])
+'''
+More information is available at https://stackoverflow.com/questions/16476924/how-to-iterate-over-rows-in-a-dataframe-in-pandas
+
+### Insert into Staging
+To insert each record from DataFrame, use following python code 
+'''
+cnxn = pyodbc.connect('DRIVER={SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+cursor = cnxn.cursor()
+# Insert Dataframe into SQL Server:
+for index, row in df.iterrows():
+    cursor.execute("INSERT INTO HumanResources.DepartmentTest (DepartmentID,Name,GroupName) values(?,?,?)", row.DepartmentID, row.Name, row.GroupName)
+cnxn.commit()
+cursor.close()
+'''
+for more details you can visit https://docs.microsoft.com/en-us/sql/machine-learning/data-exploration/python-dataframe-sql-server?view=sql-server-ver15
