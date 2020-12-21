@@ -63,6 +63,6 @@ path3 = config.get('My Section', 'path3')
 # ModuleNotFoundError: No module named 'ConfigParser'
 https://stackoverflow.com/questions/14087598/python-3-importerror-no-module-named-configparser
 
-# Load it to Flat File
+# Load it to Flat File First - ETL
 ETL Load from OLTP system to Staging tables can happen by
-_ Database to Database -- Since both systems - OLTP & Staging - are in different environments, you can directly 
+1. Database to Database -- Since both systems - OLTP & Staging - are in different environments, you can directly 
