@@ -69,4 +69,7 @@ ETL Load from OLTP system to Staging tables can happen by
 2. Database to Flag File -- It's always advisable to load data from OLTP to Flat File first and then into Staging. Remember, loading data into (or from) Flat File from OLTP will take considerably less time and this way you don't have to keep your source(or target) connection open for longer period. 
 
 ### Use Pandas Dataframe
-Python-Pandas Dataframe is very easy & convenient way to deal with data and for ETL we will use that. You can refer my earlier video https://youtu.be/9sjT8EsaoYA of using "iloc" of Pandas DataFrame. Use Pandas Dataframe ultimately to store our OLTP data into Flat File (csv) first.
+Python-Pandas Dataframe is very easy & convenient way to deal with data and for ETL we will use that. You can refer my earlier video https://youtu.be/9sjT8EsaoYA (3 mins 58 sec) of using "iloc" of Pandas DataFrame. 
+
+### Use to_csv
+Once DataFrame is created, use to_csv methond of python to export data into csv file.
