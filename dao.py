@@ -16,6 +16,4 @@ def getSourceConnection():
                             f"uid={UID};pwd={PWD};"
                             "Trusted_Connection=yes;")
 
-    cursor = cnxn.cursor()
-
-    return cursor
+    return cnxn

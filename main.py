@@ -1,8 +1,39 @@
 import dao
+import pandas as pd
 
-cursor = dao.getSourceConnection()
+targetTables = [    
+    "REGIONS",
+    "COUNTRIES",
+    "LOCATIONS",
+    "DEPARTMENTS",
+    "JOBS",
+    "EMPLOYEES",
+    "JOB_HISTORY"
+]
 
-cursor.execute('SELECT [JOB_TITLE] ,[MIN_SALARY] ,[MAX_SALARY]  FROM [HR].[dbo].[JOBS]')
+def fetchRecords(tableName):
 
-for row in cursor:
-    print('row = %r' % (row,))
+    sqlQuery = f"""
+                    select *
+                    from {tableName}
+                    where 1=1
+                """
+    # print(sqlQuery)
+
+    cnxn = dao.getSourceConnection()
+    cursor = cnxn.cursor()
+    cursor.execute(sqlQuery)
+
+    hrList = []
+    for row in cursor:        
+        hrList.append([elem for elem in row])
+        print([elem for elem in row])    
+
+    pd.DataFrame(hrList).iloc[:,:].to_csv(f"{tableName}.csv", index=False)
+
+    cursor.close()
+    cnxn.close()
+
+for tableName in targetTables:
+    fetchRecords(tableName)
+    print(tableName)

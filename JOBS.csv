@@ -1,0 +1,20 @@
+0,1,2,3
+AD_PRES,President,20080.0,40000.0
+AD_VP,Administration Vice President,15000.0,30000.0
+AD_ASST,Administration Assistant,3000.0,6000.0
+FI_MGR,Finance Manager,8200.0,16000.0
+FI_ACCOUNT,Accountant,4200.0,9000.0
+AC_MGR,Accounting Manager,8200.0,16000.0
+AC_ACCOUNT,Public Accountant,4200.0,9000.0
+SA_MAN,Sales Manager,10000.0,20080.0
+SA_REP,Sales Representative,6000.0,12008.0
+PU_MAN,Purchasing Manager,8000.0,15000.0
+PU_CLERK,Purchasing Clerk,2500.0,5500.0
+ST_MAN,Stock Manager,5500.0,8500.0
+ST_CLERK,Stock Clerk,2008.0,5000.0
+SH_CLERK,Shipping Clerk,2500.0,5500.0
+IT_PROG,Programmer,4000.0,10000.0
+MK_MAN,Marketing Manager,9000.0,15000.0
+MK_REP,Marketing Representative,4000.0,9000.0
+HR_REP,Human Resources Representative,4000.0,9000.0
+PR_REP,Public Relations Representative,4500.0,10500.0
