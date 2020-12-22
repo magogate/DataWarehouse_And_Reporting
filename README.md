@@ -117,3 +117,24 @@ To handle null values in DataFrame use following code
 dataFrame.fillna("", inplace=True)
 ```
 For more details please visit https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.fillna.html
+
+## Exception Handling in Python
+Exception handling in python is somewhat similar to other languages such as Java or c#, we will be using following code 
+```
+# import module sys to get the type of exception
+import sys
+
+randomList = ['a', 0, 2]
+
+for entry in randomList:
+    try:
+        print("The entry is", entry)
+        r = 1/int(entry)
+        break
+    except Exception as e:
+        print("Oops!", e.__class__, "occurred.")
+        print("Next entry.")
+        print()
+print("The reciprocal of", entry, "is", r)
+```
+more information on this is available at https://www.programiz.com/python-programming/exception-handling
