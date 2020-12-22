@@ -11,13 +11,17 @@ def insertIntoCountries(tableName):
 
     for index, row in df.iterrows():
         # print(type(row["8"]), row["8"])
-        cursor.execute("""INSERT INTO [dbo].[ST_COUNTRIES]([COUNTRY_ID]
-                                                ,[COUNTRY_NAME]
-                                                ,[REGION_ID]
-                                            ) 
-                                values(?,?,?)"""
-                            , row["0"], row["1"], row["2"]
-                            )
+        try:
+            cursor.execute("""INSERT INTO [dbo].[ST_COUNTRIES]([COUNTRY_ID]
+                                                    ,[COUNTRY_NAME]
+                                                    ,[REGION_ID]
+                                                ) 
+                                    values(?,?,?)"""
+                                , row["0"], row["1"], row["2"]
+                                )
+        except Exception as e:
+            print(type(str(e)))
+
     cnxn.commit()
     cursor.close()
     cnxn.close()

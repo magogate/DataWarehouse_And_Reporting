@@ -18,6 +18,15 @@ targetTables = [
     "JOB_HISTORY"
 ]
 
+def truncateTable(tableName):
+    sqlQuery = f"truncate table dbo.ST_{tableName}"
+    cnxn = dao.getTargetConnection()
+    cursor = cnxn.cursor()
+    cursor.execute(sqlQuery)
+    cnxn.commit()
+    cursor.close()
+    cnxn.close()
+
 def fetchRecords(tableName):
 
     sqlQuery = f"""
@@ -58,5 +67,6 @@ def insertRecords(tableName):
 
 for tableName in targetTables:
     fetchRecords(tableName)
+    truncateTable(tableName)
     insertRecords(tableName)
     print(tableName)

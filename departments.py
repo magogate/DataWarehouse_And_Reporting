@@ -11,14 +11,18 @@ def insertIntoDepartments(tableName):
 
     for index, row in df.iterrows():
         # print(type(row["8"]), row["8"])
-        cursor.execute("""INSERT INTO [dbo].[ST_DEPARTMENTS]([DEPARTMENT_ID]
-                                            ,[DEPARTMENT_NAME]
-                                            ,[MANAGER_ID]
-                                            ,[LOCATION_ID]
-                                            ) 
-                                values(?,?,?,?)"""
-                            , row["0"], row["1"], row["2"], row["3"]
-                            )
+        try:
+            cursor.execute("""INSERT INTO [dbo].[ST_DEPARTMENTS]([DEPARTMENT_ID]
+                                                ,[DEPARTMENT_NAME]
+                                                ,[MANAGER_ID]
+                                                ,[LOCATION_ID]
+                                                ) 
+                                    values(?,?,?,?)"""
+                                , row["0"], row["1"], row["2"], row["3"]
+                                )
+        except Exception as e:
+            print(type(str(e)))
+            
     cnxn.commit()
     cursor.close()
     cnxn.close()
