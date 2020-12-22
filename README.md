@@ -3,6 +3,7 @@
 1. Data Warehouse - 1 - Establish Connection using Python for Full Load - https://youtu.be/d8BcIFI1YSc
 2. Data Warehouse - 2 - Creating CSV file using Pandas DataFrame for Full Load - https://youtu.be/GOH6NS4kNf0
 3. Data Warehouse - 3 - read_csv of DataFrame & insert records from python for Full Load https://youtu.be/4HBIDX2j9Eg
+4. Data Warehouse - 4 - read_csv of DataFrame & insert records from python for Full Load https://youtu.be/TOG_8WHsjFc
 
 ## Pre-Requisit
 1. SQL Server (or any relational database)
