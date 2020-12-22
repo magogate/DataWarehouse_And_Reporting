@@ -140,7 +140,7 @@ print("The reciprocal of", entry, "is", r)
 ```
 more information on this is available at https://www.programiz.com/python-programming/exception-handling
 
-## How to re-name index in Pandas DataFrame
+## How to rename index in Pandas DataFrame
 You can use following code
 ```
 df.index = [1, 2, 3]
@@ -152,4 +152,4 @@ print(df)
 # 2  21  22  23
 # 3  31  32  33
 ```
-More details are available at https://note.nkmk.me/en/python-pandas-dataframe-rename/#:~:text=You%20can%20use%20the%20rename,any%20row%20%2F%20column%20name%20individually.&text=Specify%20the%20original%20name%20and,is%20for%20the%20columns%20name.
+More details are available at https://note.nkmk.me/en/python-pandas-dataframe-rename/
