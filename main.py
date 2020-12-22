@@ -1,15 +1,21 @@
 import dao
 import pandas as pd
 import employees as emp
+import countries
+import departments
+import jobHistory
+import jobs
+import locations
+import regions
 
 targetTables = [    
-    # "REGIONS",
-    # "COUNTRIES",
-    # "LOCATIONS",
-    # "DEPARTMENTS",
-    # "JOBS",
-    "EMPLOYEES"
-    # "JOB_HISTORY"
+    "REGIONS",
+    "COUNTRIES",
+    "LOCATIONS",
+    "DEPARTMENTS",
+    "JOBS",
+    "EMPLOYEES",
+    "JOB_HISTORY"
 ]
 
 def fetchRecords(tableName):
@@ -34,7 +40,20 @@ def fetchRecords(tableName):
     cnxn.close()
 
 def insertRecords(tableName):
-    emp.insertIntoEmployees(tableName)
+    if(tableName == "REGIONS"):
+        regions.insertIntoRegions(tableName)
+    elif(tableName == "COUNTRIES"):
+        countries.insertIntoCountries(tableName)
+    elif(tableName == "LOCATIONS"):
+        locations.insertIntoLocations(tableName)
+    elif(tableName == "DEPARTMENTS"):
+        departments.insertIntoDepartments(tableName)
+    elif(tableName == "JOBS"):
+        jobs.insertIntoJobs(tableName)
+    elif(tableName == "EMPLOYEES"):
+        emp.insertIntoEmployees(tableName)
+    elif(tableName == "JOB_HISTORY"):
+        jobHistory.insertIntoJobHistory(tableName)
     
 
 for tableName in targetTables:
