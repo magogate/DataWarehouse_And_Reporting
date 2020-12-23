@@ -156,3 +156,20 @@ More details are available at https://note.nkmk.me/en/python-pandas-dataframe-re
 
 ## How to get current date time in Python
 https://www.programiz.com/python-programming/datetime/current-datetime
+
+## To store history of job run
+```
+CREATE TABLE [dbo].[dw_job_run_summary](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[tablename] [varchar](100) NULL,-- table which is getting loaded
+	[start_date_Time] [datetime] NULL, -- date time on which load has started
+	[end_date_Time] [datetime] NULL, -- date time on which is load has finished
+	[rows_processed] [int] NULL,	-- number of rows processed
+	[status] [varchar](15) NULL, -- status of load (fail or success)
+	[error_message] [varchar](2000) NULL, -- if failed, then error message
+	[colid] [bigint] NULL,-- if failed, then which row failed
+	[job_run_id] [int] NULL, -- indicates how many times the process has ran
+	[created_on] [datetime] NULL default getdate() -- date when record got created
+	)
+	
+```
