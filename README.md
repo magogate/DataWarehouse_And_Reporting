@@ -158,6 +158,11 @@ More details are available at https://note.nkmk.me/en/python-pandas-dataframe-re
 https://www.programiz.com/python-programming/datetime/current-datetime
 
 ## To store history of job run
+Why its needed?
+1. To understand if our load failed or it was succeeded
+2. If failed, then what was the error?
+3. If succeeded, how many records it pulled?
+4. How long our jobs are taking to finish? how much data we are pulling everyday over a period of time?
 ```
 CREATE TABLE [dbo].[dw_job_run_summary](
 	[id] [int] IDENTITY(1,1) NOT NULL,
