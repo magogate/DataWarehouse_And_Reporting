@@ -6,6 +6,7 @@
 4. Data Warehouse - 4 - read_csv of DataFrame & insert records from python for Full Load https://youtu.be/TOG_8WHsjFc
 5. Data Warehouse - 5 - Exception handling in python for Full Load https://youtu.be/tiA-ZkuVRdE
 6. Data Warehouse - 6 - Logging Success and Error Message for Full Load https://youtu.be/TfmmvddDcJU
+6. Data Warehouse - 7 - Global Variable for Full Load https://youtu.be/oQouHYIuRDs
 
 ## Pre-Requisit
 1. SQL Server (or any relational database)
