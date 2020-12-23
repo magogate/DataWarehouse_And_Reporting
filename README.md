@@ -153,3 +153,6 @@ print(df)
 # 3  31  32  33
 ```
 More details are available at https://note.nkmk.me/en/python-pandas-dataframe-rename/
+
+## How to get current date time in Python
+https://www.programiz.com/python-programming/datetime/current-datetime
