@@ -6,10 +6,10 @@
 4. Data Warehouse - 4 - read_csv of DataFrame & insert records from python for Full Load https://youtu.be/TOG_8WHsjFc
 5. Data Warehouse - 5 - Exception handling in python for Full Load https://youtu.be/tiA-ZkuVRdE
 6. Data Warehouse - 6 - Logging Success and Error Message for Full Load https://youtu.be/TfmmvddDcJU
-6. Data Warehouse - 7 - Global Variable for Full Load https://youtu.be/oQouHYIuRDs
-7. Data Warehouse - 8 - Understanding ODS Data and Structure https://youtu.be/JEtmLpyDL5g
-8. Data Warehouse - 9 - Loading ODS Table using Stored Proc https://youtu.be/wKvaDRFo7nw
-9. Data Warehouse - 9 - Automate ODS Load using SSIS Package https://youtu.be/jRMMNn2s9aw
+7. Data Warehouse - 7 - Global Variable for Full Load https://youtu.be/oQouHYIuRDs
+8. Data Warehouse - 8 - Understanding ODS Data and Structure https://youtu.be/JEtmLpyDL5g
+9. Data Warehouse - 9 - Loading ODS Table using Stored Proc https://youtu.be/wKvaDRFo7nw
+10. Data Warehouse - 10 - Automate ODS Load using SSIS Package https://youtu.be/jRMMNn2s9aw
 
 ## Pre-Requisit
 1. SQL Server (or any relational database)
