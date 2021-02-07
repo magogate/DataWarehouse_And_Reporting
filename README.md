@@ -210,3 +210,7 @@ Create table ODS_HR
 )
 ```
 ODS Load we can do using any ETL tool, however in this video series I have used Stored Proc. You will find that SP in repisitory. Also, both Staging Load and ODS Load I have combined into single SSIS package, which we can automate later on.
+# Dimentional Modeling
+You can configure Data Warehouse mainly by two ways, Dimentional Modeling or 3NF Modeling - for more information you can refer to link - http://roelantvos.com/blog/comparisons-between-data-warehouse-modelling-techniques/
+However, for this implementation we are going to implement simple Dimentional Model, which is as follows
+<img src="HR_DimentionalModel.jpg" alt="Italian Trulli">
