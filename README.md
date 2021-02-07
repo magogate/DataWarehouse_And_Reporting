@@ -209,7 +209,7 @@ Create table ODS_HR
 	, UpdatedOn			DateTime2(3) DEFAULT getDate()
 )
 ```
-ODS Load we can do using any ETL tool, however in this video series I have used Stored Proc. You will find that SP in repisitory. Also, both Staging Load and ODS Load I have combined into single SSIS package, which we can automate later on.
+ODS Load we can do using any ETL tool, however in this video series I have used Stored Proc. You will find that SP in repisitory. Also, both Staging Load and ODS Load I have combined into single SSIS package, which we can automate later on. Note - In this case I have use Insert - Update stragegy, you can go for Delete \ Insert as well but that's not advisible.
 # Dimentional Modeling
 You can configure Data Warehouse mainly by two ways, Dimentional Modeling or 3NF Modeling - for more information you can refer to link - http://roelantvos.com/blog/comparisons-between-data-warehouse-modelling-techniques/
 However, for this implementation we are going to implement simple Dimentional Model, which is as follows
