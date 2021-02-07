@@ -9,6 +9,7 @@
 6. Data Warehouse - 7 - Global Variable for Full Load https://youtu.be/oQouHYIuRDs
 7. Data Warehouse - 8 - Understanding ODS Data and Structure https://youtu.be/JEtmLpyDL5g
 8. Data Warehouse - 9 - Loading ODS Table using Stored Proc https://youtu.be/wKvaDRFo7nw
+9. Data Warehouse - 9 - Automate ODS Load using SSIS Package https://youtu.be/jRMMNn2s9aw
 
 ## Pre-Requisit
 1. SQL Server (or any relational database)
