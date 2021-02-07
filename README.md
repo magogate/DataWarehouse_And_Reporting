@@ -7,6 +7,8 @@
 5. Data Warehouse - 5 - Exception handling in python for Full Load https://youtu.be/tiA-ZkuVRdE
 6. Data Warehouse - 6 - Logging Success and Error Message for Full Load https://youtu.be/TfmmvddDcJU
 6. Data Warehouse - 7 - Global Variable for Full Load https://youtu.be/oQouHYIuRDs
+7. Data Warehouse - 8 - Understanding ODS Data and Structure https://youtu.be/JEtmLpyDL5g
+8. Data Warehouse - 9 - Loading ODS Table using Stored Proc https://youtu.be/wKvaDRFo7nw
 
 ## Pre-Requisit
 1. SQL Server (or any relational database)
