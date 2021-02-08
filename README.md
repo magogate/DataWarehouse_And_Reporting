@@ -224,20 +224,20 @@ All non-measurable attributes we are going to keep in Dimention Tables. In our c
 5. DimDate
 ## Date Dimention
 For any Data Warehouse implementation, you should have a separate date dimention. Now, columns in your date dimentions can very based on the business \ reporting need. For this implementation, we are going to create following columns in Date Dimentions along with their Excel formulae.
-CalendarDate -- will be populated manually (its only for Excel)
-month_id -- =Month(B2)
-month_desc -- =TEXT(B2,"mmmm")
-qurater_id -- =IF( OR(C2 = 1, C2=2, C2 = 3),1, IF(OR(C2 = 4, C2=5, C2 = 6),2,IF(OR(C2 = 7, C2=8, C2 = 9),3,4)))
-qurater_desc -- ="Qtr " & REPT("0",2 - LEN(E2)) & E2
-year_id -- =YEAR(B2)
-day_number_of_week -- =SWITCH(I2,"Sunday",1,"Monday",2,"Tuesday",3,"Wednesday",4,"Thursday",5,"Friday",6,"Saturday",7)
-day_of_week_desc -- =TEXT(B2,"dddd")
-day_number_of_month -- =DAY(B2)
-day_number_of_year -- =B2 - DATE(YEAR(B2),1,0)
-week_number_of_year -- =WEEKNUM(B2)
-year_month -- =YEAR(B2) & "-" & REPT("0",2 - LEN(C2)) & C2
-calendar_date -- = '2021-01-02',
-date_id -- =YEAR(B4) & REPT("0",2 - LEN(C4)) & C4 & REPT("0",2 - LEN(J4)) & J4
+1. CalendarDate -- will be populated manually (its only for Excel)
+2. month_id -- =Month(B2)
+3. month_desc -- =TEXT(B2,"mmmm")
+4. qurater_id -- =IF( OR(C2 = 1, C2=2, C2 = 3),1, IF(OR(C2 = 4, C2=5, C2 = 6),2,IF(OR(C2 = 7, C2=8, C2 = 9),3,4)))
+5. qurater_desc -- ="Qtr " & REPT("0",2 - LEN(E2)) & E2
+6. year_id -- =YEAR(B2)
+7. day_number_of_week -- =SWITCH(I2,"Sunday",1,"Monday",2,"Tuesday",3,"Wednesday",4,"Thursday",5,"Friday",6,"Saturday",7)
+8. day_of_week_desc -- =TEXT(B2,"dddd")
+9. day_number_of_month -- =DAY(B2)
+10. day_number_of_year -- =B2 - DATE(YEAR(B2),1,0)
+11. week_number_of_year -- =WEEKNUM(B2)
+12. year_month -- =YEAR(B2) & "-" & REPT("0",2 - LEN(C2)) & C2
+13. calendar_date -- = '2021-01-02',
+14. date_id -- =YEAR(B4) & REPT("0",2 - LEN(C4)) & C4 & REPT("0",2 - LEN(J4)) & J4
 
 ## Fact
 All measurable attributes we keep in Fact table. Though there are many Dim tables in DW implementation, there can be 1 (max 2 or 3) fact in DW implementation. In our case, we are going to keep only 1 Fact table.
