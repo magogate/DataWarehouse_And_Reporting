@@ -214,3 +214,12 @@ ODS Load we can do using any ETL tool, however in this video series I have used 
 You can configure Data Warehouse mainly by two ways, Dimentional Modeling or 3NF Modeling - for more information you can refer to link - http://roelantvos.com/blog/comparisons-between-data-warehouse-modelling-techniques/
 However, for this implementation we are going to implement simple Dimentional Model, which is as follows
 <img src="HR_DimentionalModel.jpg" alt="Italian Trulli">
+## Dimentions
+All non-measurable attributes we are going to keep in Dimention Tables. In our case, we are going too create following dimenstion tables. Also, Dimentation tables maintains historical records (same as ODS). You can also implement different  SCD (Slowly Changing Dimentions) types based on business need, however for this video we are not going to implement it to keep things simple as we can.
+1. DimLocations -- Location, Country and Region records are combined into a single dimention table
+2. DimDepartments
+3. DimJobs
+4. DimEmployees
+5. DimDate
+## Fact
+All measurable attributes we keep in Fact table. Though there are many Dim tables in DW implementation, there can be 1 (max 2 or 3) fact in DW implementation. In our case, we are going to keep only 1 Fact table.
