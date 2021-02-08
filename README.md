@@ -10,6 +10,7 @@
 8. Data Warehouse - 8 - Understanding ODS Data and Structure https://youtu.be/JEtmLpyDL5g
 9. Data Warehouse - 9 - Loading ODS Table using Stored Proc https://youtu.be/wKvaDRFo7nw
 10. Data Warehouse - 10 - Automate ODS Load using SSIS Package https://youtu.be/jRMMNn2s9aw
+11. Data Warehouse - 11 - Load Dim Tables using Stored Proc https://youtu.be/urLBGp3_3PY
 
 ## Pre-Requisit
 1. SQL Server (or any relational database)
