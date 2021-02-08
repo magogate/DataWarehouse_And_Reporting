@@ -243,24 +243,24 @@ We are going to create following columns in Date Dimentions along with their Exc
 11. week_number_of_year -- =WEEKNUM(B2)
 12. year_month -- =YEAR(B2) & "-" & REPT("0",2 - LEN(C2)) & C2
 13. calendar_date -- = '2021-01-02',
-14. date_id -- =YEAR(B4) & REPT("0",2 - LEN(C4)) & C4 & REPT("0",2 - LEN(J4)) & J4
+14. date_id -- =YEAR(B2) & REPT("0",2 - LEN(C2)) & C2 & REPT("0",2 - LEN(J2)) & J2
 
 ```
 Create Table DimDate
 (
 	DateDimKey				int
-	, calendar_date			varchar(10)
+	, calendar_date				varchar(10)
 	, month_id				smallint
-	, month_desc 			varchar(15)
-	, qurater_id			smallint
-	, qurater_desc 			varchar(6)
+	, month_desc 				varchar(15)
+	, qurater_id				smallint
+	, qurater_desc 				varchar(6)
 	, year_id 				int
-	, day_number_of_week	smallint
-	, day_of_week_desc 		varchar(15)
-	, day_number_of_month 	smallint
-	, day_number_of_year 	smallint
-	, week_number_of_year 	smallint
-	, year_month 			varchar(7)	
+	, day_number_of_week			smallint
+	, day_of_week_desc 			varchar(15)
+	, day_number_of_month 			smallint
+	, day_number_of_year 			smallint
+	, week_number_of_year 			smallint
+	, year_month 				varchar(7)	
 )
 ```
 ## Fact
