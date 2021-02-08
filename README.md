@@ -245,5 +245,25 @@ We are going to create following columns in Date Dimentions along with their Exc
 13. calendar_date -- = '2021-01-02',
 14. date_id -- =YEAR(B4) & REPT("0",2 - LEN(C4)) & C4 & REPT("0",2 - LEN(J4)) & J4
 
+```
+Create Table DimDate
+(
+	DateDimKey				int
+	, calendar_date			varchar(10)
+	, month_id				smallint
+	, month_desc 			varchar(15)
+	, qurater_id			smallint
+	, qurater_desc 			varchar(6)
+	, year_id 				int
+	, day_number_of_week	smallint
+	, day_of_week_desc 		varchar(15)
+	, day_number_of_month 	smallint
+	, day_number_of_year 	smallint
+	, week_number_of_year 	smallint
+	, year_month 			varchar(7)	
+)
+```
 ## Fact
 All measurable attributes we keep in Fact table. Though there are many Dim tables in DW implementation, there can be 1 (max 2 or 3) fact in DW implementation. In our case, we are going to keep only 1 Fact table.
+
+
