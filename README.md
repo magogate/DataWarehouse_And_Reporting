@@ -223,7 +223,12 @@ All non-measurable attributes we are going to keep in Dimention Tables. In our c
 4. DimEmployees
 5. DimDate
 ## Date Dimention
-For any Data Warehouse implementation, you should have a separate date dimention. Now, columns in your date dimentions can very based on the business \ reporting need. For this implementation, we are going to create following columns in Date Dimentions along with their Excel formulae.
+For any Data Warehouse implementation, you should have a separate date dimention. Now, columns in your date dimentions can very based on the business \ reporting need. There are several insert scripts you can find if you google it, few links I have specified below
+1. https://www.sqlshack.com/implementing-different-calendars-in-reporting/
+2. https://stackoverflow.com/questions/5635594/how-to-create-a-calendar-table-for-100-years-in-sql
+
+However, for this video, we are going to use Excel. Using Excel formulae specified below, we will first create data as required, and then prepare insert statements using it.
+We are going to create following columns in Date Dimentions along with their Excel formulae.
 1. CalendarDate -- will be populated manually (its only for Excel)
 2. month_id -- =Month(B2)
 3. month_desc -- =TEXT(B2,"mmmm")
