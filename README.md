@@ -13,6 +13,7 @@
 11. Data Warehouse - 11 - Load Dim Tables using Stored Proc https://youtu.be/urLBGp3_3PY
 12. Data Warehouse - 12 - Load Date Dim using Excel Formulae https://youtu.be/tCM1bJO7_N0
 13. Data Warehouse - 13 - Load Employee Dim using Stored Proc https://youtu.be/teAIA_Ko9AE
+14. Data Warehouse - 14 - Load Manager Dim using Stored Proc https://youtu.be/IS5rHOxBLto
 
 ## Pre-Requisit
 1. SQL Server (or any relational database)
