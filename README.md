@@ -271,7 +271,7 @@ To populate Surrogate Keys to Fact tables,
 1. you can either use Staging tables joining with corresponding DIM tables
 2. or you can use ODS table joining with corresponding DIM tables. Using ODS table will be much easier as since it will reduce joins between staging tables and ultimately the query complexity.
 
-Also, main challenge in populating Fact (or even ODS & Staging tables for that matter) is incremental load. As of now we are going by Full Load, which is a very bad practice as per my knowledge. If there are millions of records in OLTP systems, full load will take forever to finish the load.
+Also, main challenge in populating Fact (or even ODS & Staging tables for that matter) is incremental load. As of now we are going by Full Load, which is a very bad practice as per my knowledge. If there are millions of records in OLTP systems, full load will take forever to finish the load. and since its a Full Load, so while Fact Load we will go as Truncate & Reload.
 
 In next few videos we will see how (and why) can we change this FULL Load to Incremental Load. However, incremental load is a challenging task. All depends on how source system is built. 
 1. If OLTP source has always incremental records (no updates), then we can keep ODS and Fact as always insert. 
