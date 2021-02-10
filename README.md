@@ -267,5 +267,21 @@ Create Table DimDate
 ```
 ## Fact
 All measurable attributes we keep in Fact table. Though there are many Dim tables in DW implementation, there can be 1 (max 2 or 3) fact in DW implementation. In our case, we are going to keep only 1 Fact table.
+To populate Surrogate Keys to Fact tables, 
+1. you can either use Staging tables joining with corresponding DIM tables
+2. or you can use ODS table joining with corresponding DIM tables. Using ODS table will be much easier as since it will reduce joins between staging tables and ultimately the query complexity.
 
+Also, main challenge in populating Fact (or even ODS & Staging tables for that matter) is incremental load. As of now we are going by Full Load, which is a very bad practice as per my knowledge. If there are millions of records in OLTP systems, full load will take forever to finish the load.
+
+In next few videos we will see how (and why) can we change this FULL Load to Incremental Load. However, incremental load is a challenging task. All depends on how source system is built. 
+1. If OLTP source has always incremental records (no updates), then we can keep ODS and Fact as always insert. 
+2. If OLTP source is Insert \ Update then ODS we may need to keep Delete\Insert (most of the times) or Update\Insert
+3. There can be many cases which I can not think of. 
+
+Also, while pulling records from source tables into Staging tables incrementally, we have to be very careful. 
+1. We need to pull records by Creation Date and Updation Date
+2. We need to pull records from Transation Table, but their correspodning records from master table. As we need master table join in ODS or DIM\Fact load. 
+3. It would be good if we have FULL load for Master tables and Incremental Load for Transaction Table.
+
+All above scenarios I just documented based on my small knowledge, unless we work on real problem, we will never come to know the actual solution. and since every problem is different, their solutions will also differ.
 
