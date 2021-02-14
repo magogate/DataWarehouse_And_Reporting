@@ -17,6 +17,7 @@
 15. Data Warehouse - 15 - Load Fact table using Stored Proc https://youtu.be/JA-lwCjmWhI
 16. Data Warehouse - 16 - Creating SSAS Multidimensional Cube for Reporting https://youtu.be/VP7Om7G2EkI
 17. Data Warehouse - 17 - Improving SSAS Multidimensional Cube for Reporting https://youtu.be/9dMYpRxGaoI 
+18. Data Warehouse - 18 - Process SSAS Cube using SSIS package https://youtu.be/OF40ZEaxN8s
 
 ## Pre-Requisit
 1. SQL Server (or any relational database)
