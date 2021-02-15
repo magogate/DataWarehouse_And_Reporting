@@ -18,6 +18,7 @@
 16. Data Warehouse - 16 - Creating SSAS Multidimensional Cube for Reporting https://youtu.be/VP7Om7G2EkI
 17. Data Warehouse - 17 - Improving SSAS Multidimensional Cube for Reporting https://youtu.be/9dMYpRxGaoI 
 18. Data Warehouse - 18 - Process SSAS Cube using SSIS package https://youtu.be/OF40ZEaxN8s
+19. Data Warehouse - 19 - Schedule SSIS package using SQL Job https://youtu.be/8MpR7FUz3p0
 
 ## Pre-Requisit
 1. SQL Server (or any relational database)
