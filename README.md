@@ -19,7 +19,7 @@
 17. Data Warehouse - 17 - Improving SSAS Multidimensional Cube for Reporting https://youtu.be/9dMYpRxGaoI 
 18. Data Warehouse - 18 - Process SSAS Cube using SSIS package https://youtu.be/OF40ZEaxN8s
 19. Data Warehouse - 19 - Schedule SSIS package using SQL Job https://youtu.be/8MpR7FUz3p0
-20. Data Warehouse - 20 - Incremental Load Using Python - Part1 https://youtu.be/DPgdyQSgq1o
+20. Data Warehouse - 20 - Incremental Load Using Python - Part1 https://youtu.be/F2wtnpChrpY
 
 ## Pre-Requisit
 1. SQL Server (or any relational database)
