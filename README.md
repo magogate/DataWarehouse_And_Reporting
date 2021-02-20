@@ -20,6 +20,7 @@
 18. Data Warehouse - 18 - Process SSAS Cube using SSIS package https://youtu.be/OF40ZEaxN8s
 19. Data Warehouse - 19 - Schedule SSIS package using SQL Job https://youtu.be/8MpR7FUz3p0
 20. Data Warehouse - 20 - Incremental Load Using Python - Part1 https://youtu.be/F2wtnpChrpY
+21. Data Warehouse - 21 - Converting Fact from TruncReload to DeleteInsert - Part2 https://youtu.be/NEflh6pZiZw
 
 ## Pre-Requisit
 1. SQL Server (or any relational database)
