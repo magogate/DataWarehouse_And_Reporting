@@ -295,3 +295,11 @@ Also, while pulling records from source tables into Staging tables incrementally
 
 All above scenarios I just documented based on my small knowledge, unless we work on real problem, we will never come to know the actual solution. and since every problem is different, their solutions will also differ.
 
+# Reporting
+Whether its OBIEE, Business Objects, Power BI, SSAS Cube (MultiDimentional or Tabular). Power Pivot or even Tableau - in order to make reports, you need to follow following generic things.
+1. Select your tables by creating Connections
+2. Define relationships among those tables
+3. Select your Dimensions Attributes (non-measurable) & Facts (Measurable Attributes)
+4. Hide attributs \ Fields which are not needed
+5. Create Views as per need for reporting
+6. Create derived columns as per need
