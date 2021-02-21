@@ -22,6 +22,7 @@
 20. Data Warehouse - 20 - Incremental Load Using Python - Part1 https://youtu.be/F2wtnpChrpY
 21. Data Warehouse - 21 - Converting Fact from TruncReload to DeleteInsert - Part2 https://youtu.be/NEflh6pZiZw
 22. Data Warehouse - 22 - Incremental Load Using Python - Part3 https://youtu.be/NkGbvWq3mmE
+23. Data Warehouse - 23 - Reporting using Excel Power Pivot https://youtu.be/NuQF__HUytU
 
 ## Pre-Requisit
 1. SQL Server (or any relational database)
