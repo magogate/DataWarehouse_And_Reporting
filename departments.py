@@ -3,7 +3,7 @@ import dao
 import dw_job_run_summary as jobRunSummary
 from datetime import datetime
 
-def insertIntoDepartments(tableName, job_run_id):
+def insertIntoDepartments(df, tableName, job_run_id):
 
     rows_processed = 0
     start_date_Time = datetime.now()

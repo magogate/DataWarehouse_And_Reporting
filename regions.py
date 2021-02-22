@@ -3,7 +3,7 @@ import dao
 import dw_job_run_summary as jobRunSummary
 from datetime import datetime
 
-def insertIntoRegions(tableName, job_run_id):
+def insertIntoRegions(df, tableName, job_run_id):
 
     rows_processed = 0
     start_date_Time = datetime.now()
@@ -11,7 +11,7 @@ def insertIntoRegions(tableName, job_run_id):
     cursor = cnxn.cursor()
     success  = True
 
-    df = pd.read_csv(f"{tableName}.csv") 
+    # df = pd.read_csv(f"{tableName}.csv") 
     df.fillna("", inplace=True)
 
     for index, row in df.iterrows():

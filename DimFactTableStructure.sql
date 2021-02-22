@@ -36,11 +36,23 @@ Create table DimEmployees
 	,	LastName		varchar(60)
 	,	Email			varchar(60)
 	,	PhoneNumber		varchar(60)
-	,	StartDate		DateTime2(3)
-	,	EndDate			DateTime2(3)
+	,	HireDate		int	
 	,	CreatedOn		DateTime2(3) Default getDate()
 	,	UpdatedOn		DateTime2(3) Default getDate()
 )	
+
+Create table DimManagers
+(
+	ManagerDimKey		int Identity(1,1)
+	,	ManagerId		int
+	,	FirstName		varchar(60)
+	,	LastName		varchar(60)
+	,	Email			varchar(60)
+	,	PhoneNumber		varchar(60)
+	,	HireDate		int	
+	,	CreatedOn		DateTime2(3) Default getDate()
+	,	UpdatedOn		DateTime2(3) Default getDate()
+)
 
 Create table DimJobs
 (
