@@ -24,6 +24,7 @@
 22. Data Warehouse - 22 - Incremental Load Using Python - Part3 https://youtu.be/NkGbvWq3mmE
 23. Data Warehouse - 23 - Reporting using Excel Power Pivot https://youtu.be/NuQF__HUytU
 24. Data Warehouse - 24 - Reporting using Power BI https://youtu.be/MjuLCctMUIQ
+25. Data Warehouse - 25 - Reporting using Tableau https://youtu.be/E_kEeW5Ea5k
 
 ## Pre-Requisit
 1. SQL Server (or any relational database)
